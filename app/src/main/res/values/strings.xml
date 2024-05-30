@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">PuFFnPoof</string>
+    <string name="toRegister"><u>Register Here!</u></string>
+    <string name="toLogin"><u>Log in Here!</u></string>
+
+</resources>

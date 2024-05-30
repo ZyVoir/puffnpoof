@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="126dp"
+            android:layout_height="126dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="39dp"
+            android:contentDescription="Logo"
+            app:srcCompat="@drawable/logo" />
+
+        <FrameLayout
+            android:layout_width="324.5dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/rounded_corner_bg_16"
+            android:paddingHorizontal="30sp"
+            android:paddingVertical="12sp"
+
+            >
+            <!--            layout utama-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--                header-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Register"
+                    android:textColor="@color/darkbrown"
+                    android:textSize="24sp" />
+
+                <FrameLayout
+                    android:layout_width="96dp"
+                    android:layout_height="5dp"
+                    android:background="@drawable/rounded_corner_bg_6" />
+
+
+                <!--                email field-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:drawableStart="@drawable/baseline_email_24"
+                    android:drawablePadding="7dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Ends with @puff.com"
+                    android:textSize="12sp"
+                    android:inputType="textEmailAddress"/>
+                <!--               Username field-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Username"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:drawableStart="@drawable/baseline_person_24"
+                    android:drawablePadding="7dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Type an unique username"
+                    android:textSize="12sp"
+                    android:inputType="text"/>
+
+                <!--                password field -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Password"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:drawableStart="@drawable/baseline_lock_24"
+                    android:drawablePadding="7dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="> 8 Characters"
+                    android:inputType="textPassword"
+                    android:textSize="12sp" />
+
+                <!--                telephone number field-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Telephone Number"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_telpNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:drawableStart="@drawable/baseline_smartphone_24"
+                    android:drawablePadding="7dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="11 - 13 Digits long"
+                    android:inputType="number"
+                    android:textSize="12sp" />
+
+                <!--                gender-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Gender"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#2EA7FF"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Male"
+                        android:textColor="#2EA7FF"
+                        android:textSize="12sp"
+                        />
+                    <LinearLayout
+                        android:layout_width="67sp"
+                        android:layout_height="match_parent"/>
+                    <RadioButton
+                        android:id="@+id/rb_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Female"
+                        android:textColor="#FF9797"
+                        android:buttonTint="#FF9797"
+                        android:textSize="12sp" />
+                </RadioGroup>
+
+                <!--button login-->
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_corner_bg_9"
+                    android:fontFamily="@font/poppins_medium"
+                    android:letterSpacing="0.1"
+                    android:text="Register"
+                    android:textColor="@color/white" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Already have an account ?"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0sp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/toLogin"
+                    android:textAlignment="center"
+                    android:textColor="@color/darkbrown"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
